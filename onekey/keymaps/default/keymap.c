@@ -32,7 +32,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case MACRO_A:
             if (record->event.pressed) {        // pressed
-                SEND_STRING("Kzmt123Knd!#%135");// Apr30, 2024-
+                SEND_STRING("");
             } else {                            // released
                 SEND_STRING(SS_TAP(X_ENTER));   // enter
             }
