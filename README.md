@@ -1,9 +1,10 @@
-# password-manager
-# 205
+# password-manager, 205
 
 Oct 19, 2024
 
 This tool simplifies password entry. It acts as a USB keyboard, sending a pre-programmed password when its button is pressed.
+
+![alt text](image.png)
 
 ## Here's how it works
 
@@ -24,5 +25,3 @@ This tool is ideal for:
 1. Connect the device to your computer's USB port.
 2. Press the button to automatically type the stored password.
 
-
-![alt text](image.png)
