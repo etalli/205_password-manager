@@ -4,7 +4,7 @@ Oct 19, 2024
 
 This tool simplifies password entry. It acts as a USB keyboard, sending a pre-programmed password when its button is pressed.
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## Here's how it works
 
