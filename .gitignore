@@ -45,3 +45,4 @@ dist/
 # Password files (sensitive information)
 passwords.h
 **/passwords.h
+onekey/keymaps/.DS_Store
