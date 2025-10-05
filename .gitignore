@@ -1,0 +1,47 @@
+# QMK Build artifacts
+*.hex
+*.bin
+*.uf2
+*.map
+*.elf
+*.lst
+*.sym
+*.log
+*.o
+*.d
+*.elf.map
+*.hex.map
+
+# QMK Environment
+.qmk
+qmk_firmware/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Build directories
+build/
+dist/
+
+# Password files (sensitive information)
+passwords.h
+**/passwords.h

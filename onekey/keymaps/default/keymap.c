@@ -1,6 +1,7 @@
 // Copyright 2020 QMK
 // SPDX-License-Identifier: GPL-2.0-or-later
 #include QMK_KEYBOARD_H
+#include "passwords.h"
 
 // uncomment if this is for pwtool
 #define PWT
@@ -32,14 +33,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case MACRO_A:
             if (record->event.pressed) {        // pressed
-                SEND_STRING("afqrzvAFQR12!!");// July 6th, 2025
+                SEND_STRING(PASSWORD_A);
             } else {                            // released
                 SEND_STRING(SS_TAP(X_ENTER));   // enter
             }
             break;
         case MACRO_B:
             if (record->event.pressed) {        // pressed
-                SEND_STRING("xxx");
+                SEND_STRING(PASSWORD_B);
             } else {                            // released
                 SEND_STRING(SS_TAP(X_ENTER));   // enter
             }

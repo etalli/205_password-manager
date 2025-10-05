@@ -1,0 +1,29 @@
+name: Build Firmware
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up QMK
+      uses: qmk/qmk_firmware@master
+      with:
+        qmk_branch: master
+    
+    - name: Build firmware
+      run: |
+        make handwired/onekey:default
+    
+    - name: Upload firmware
+      uses: actions/upload-artifact@v3
+      with:
+        name: onekey-default.hex
+        path: handwired_onekey_default.hex
