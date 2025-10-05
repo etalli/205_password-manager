@@ -2,7 +2,7 @@
 
 A simple USB keyboard password manager using QMK firmware on a KB2040 microcontroller board.
 
-![alt text](image-1.png)
+![Password Manager OneKey](image-1.png)
 
 ## Overview
 
